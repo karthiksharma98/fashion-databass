@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Fashion DB</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<form action="/createClothingItem" method="POST" style="border:1px solid #ccc">
+    <div class="container">
+        <h1>Add Clothing Item</h1>
+
+        <label for="title"><b>Title</b></label>
+        <input type="text" placeholder="Enter title" name="title" required>
+        <br/>
+        
+        <label for="brandName"><b>Brand:</b></label>
+        <input type="text" placeholder="Enter brandName" name="brandName" required>
+        <br/>
+
+        <label for="clothingType"><b>Type:</b></label>
+        <input type="text" placeholder="Enter clothingType" name="clothingType" required>
+        <br/>
+
+        <label for="radio"><b>Gender:</b></label>
+          <label>Male
+            <span class="checkmark"></span>
+            <input type="radio" checked="checked" name="radio">
+          </label>
+          <label >Female
+            <span class="checkmark"></span>
+            <input type="radio" name="radio">
+          </label>
+          <label >Unisex
+            <span class="checkmark"></span>
+            <input type="radio" name="radio">
+          </label>
+        
+        <br/>
+
+        <label for="price"><b>Price:</b></label>
+        <input type="text" placeholder="Enter price" name="price" required>
+        <br/>
+        
+        <label for="regularPrice"><b>Base Price:</b></label>
+        <input type="text" placeholder="Enter regularPrice" name="regularPrice" required>
+        <br/>
+        
+        <label for="rating"><b>Rating:</b></label>
+        <input type="text" placeholder="Enter rating" name="rating" required>
+        <br/>
+        <div class="clearfix">
+        <button type="submit" class="createbtn">Create</button>
+        </div>
+    </div>
+  </form>
+
+
+
+</body>
+</html>

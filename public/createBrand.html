@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fashion DB</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+
+<form action="/createBrand" method="POST" style="border:1px solid #ccc">
+    <div class="container">
+        <h1>Create Brand</h1>
+        
+        <label for="brandName"><b>Brand Name</b></label>
+        <input type="text" placeholder="Enter Brand Bame" name="brandName" required>
+        <br/>
+
+        <label for="avgPrice"><b>Average Price</b></label>
+        <input type="text" placeholder="Enter average price" name="avgPrice" required>
+        <br/>
+        
+        <div class="clearfix">
+        <button type="submit" class="createbtn">Create</button>
+        </div>
+    </div>
+  </form>
+
+
+
+</body>
+</html>
